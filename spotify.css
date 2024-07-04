@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* ..........................................sidebar................................. */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    background-color: #000000;
+    padding: 10px;
+    /* margin-top: 0px; */
+    border-top-right-radius: 10px;
+}
+
+.navigation {
+    /* border: 1px solid white; */
+    background-color: #121212;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0px 0px;
+}
+
+.navigation ul li {
+    padding: 10px 25px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#logo {
+    color: #fff;
+}
+
+.navigation ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.navigation ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.elements {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+    height: 500px;
+    color: #b3b3b3;
+}
+
+.elements .library {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.elements .library a:hover,
+.elements .library i:hover {
+    color: #fff;
+}
+
+.elements a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 660;
+    margin-right: 50px;
+    /* margin: 20px 10px; */
+}
+
+.elements .fa-plus {
+    font-size: 16px;
+    color: #b3b3b3;
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* padding-right: 15px; */
+    /* margin: 15px 10px; */
+
+}
+
+.elements .fa-plus:hover {
+    background-color: #575656;
+}
+
+.elements .bar-elements {
+    height: 250px;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    overflow: auto;
+    padding-top: 100px;
+}
+
+.bar-elements .bar-items {
+    height: 180px;
+    width: 90%;
+    background-color: #2f2f2f;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.bar-items h4,
+.bar-items p {
+    margin-bottom: 5px;
+
+}
+
+/* .bar-items button{
+    height: 40px;
+    width: 180px;
+    border-radius: 30px;
+    font-weight: 660;
+    color: #000000;
+    border: 0;
+} */
+.elements ul {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.elements ul li {
+    display: inline;
+    /* margin: 20px; */
+    font-size: 12px;
+    margin: 35px;
+}
+
+.elements .bar-items button {
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 30px;
+}
+
+.elements .bar-items button:hover {
+    width: 165px;
+    height: 43px;
+}
+
+#language {
+    background-color: transparent;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 0.5px solid #b3b3b3;
+    border-radius: 30px;
+}
+
+#language i {
+    margin-right: 5px;
+}
+
+#language:hover {
+    border: 1px solid #fff;
+    font-size: 16px;
+
+}
+
+/* ..........................................Main section................................. */
+
+
+
+.main-container {
+    /* margin-left: 310px;
+    margin-bottom: 100px;
+    margin-right: 10px; */
+    border-radius: 6px;
+    margin: 10px 10px 100px 350px;
+    overflow: auto;
+    width: 75%;
+    /* border: 1px solid white; */
+    /* background-color: yellow; */
+    background-image: linear-gradient(to bottom, #222222f2, #000000, #000000, #000000);
+}
+
+.topbar {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212f2;
+    padding: 14px 30px;
+    /* border-radius: 20px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover {
+    background-color: #f2f2f2;
+}
+
+.spotify-playlists {
+    padding: 20px 20px;
+}
+
+.spotify-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+    min-width: 140px;
+    width: 170px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+    background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+    position: relative;
+}
+
+.spotify-playlists .list .item .play i {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play i {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.singers img {
+    border-radius: 50%;
+}
+
+
+
+
+.singupfree {
+    height: 60px;
+    width: 98%;
+    margin: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(70, 70, 209);
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.singupfree button {
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    font-weight: 660;
+    border: 0;
+}
+
+
+
+
+
+/* ............................................................footer section................................................... */
+
+.footer {
+    height: 350px;
+    width: 100%;
+    border-bottom: 1px solid #b3b3b3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.footer .xyz {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .xyz p {
+    color: #fff;
+    font-weight: 660;
+}
+
+.footer .xyz a {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.footer .xyz a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer .xyz1 {
+    display: flex;
+}
+
+.footer .xyz1 a {
+    text-decoration: none;
+    color: #b3b3b3;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.footer .xyz1 a:hover {
+    background-color: #575656;
+    color: #fff;
+}
+
+#hyy {
+    color: #b3b3b3;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.abcd {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.bar-elements::-webkit-scrollbar {
+    height: 5px;
+    cursor: pointer;
+
+}
+
+.bar-elements::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+.bar-elements::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: transparent;
+}
+
+.bar-elements::-webkit-scrollbar-thumb:hover {
+
+    background: #b4b2b2;
+}
